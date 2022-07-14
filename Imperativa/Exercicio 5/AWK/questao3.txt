@@ -1,0 +1,18 @@
+BEGIN {
+    FS=",";
+}
+{
+    for(i=3;i<=NF;i++){
+        if($i==0)
+            notas0++;
+        if($i==9)
+            notas9++;
+        if($i==10)
+            notas10++;   
+    }
+}
+END{
+    print "Qnt Notas 0: "notas0"\nQnt Notas 9: "notas9"\nQnt Notas 10: "notas10;
+}
+
+

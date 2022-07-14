@@ -1,0 +1,13 @@
+BEGIN {
+    FS=",";
+}
+{
+    split($2,array," ")
+    for(j=1;j<=length(array);j++){
+        if(array[j] == "DA" || array[j] == "DE" || array[j] == "DO"){
+            print $2;
+        }
+    }
+}
+
+

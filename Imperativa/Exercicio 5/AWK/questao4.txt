@@ -1,0 +1,10 @@
+BEGIN {
+    FS=",";
+}
+{
+    for(i=3;i<=NF;i++){
+        somaNotas=somaNotas+$i; 
+        if(somaNotas<1000 && i==3 && $1 != "Mátricula")
+            print $1,$2;   
+    }
+}

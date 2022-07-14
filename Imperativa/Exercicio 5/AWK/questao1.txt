@@ -1,0 +1,6 @@
+BEGIN {
+    FS=",";
+}
+{
+    if($2 == "CAIO MARCELLO GRIMM SOUZA E SILVA") print $1,$2,$3,$4,$5;
+}
